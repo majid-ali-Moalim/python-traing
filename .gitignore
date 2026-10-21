@@ -1,0 +1,7 @@
+venv/
+users.db
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example

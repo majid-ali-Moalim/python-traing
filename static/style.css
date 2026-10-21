@@ -1,0 +1,158 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+.button,
+button {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.button:hover,
+button:hover {
+    background: #1d4ed8;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.form-container {
+    max-width: 420px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-container h1 {
+    margin-top: 0;
+}
+
+.form-container label {
+    display: block;
+    margin: 15px 0 7px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+}
+
+.form-container button {
+    width: 100%;
+    margin-top: 22px;
+}
+
+.form-container p {
+    line-height: 1.6;
+}
+
+.message {
+    color: #b91c1c;
+}
+
+.dashboard {
+    padding: 40px 8%;
+}
+
+.card {
+    max-width: 600px;
+    margin-top: 25px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #64748b;
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    nav div {
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .form-container {
+        margin: 25px 15px;
+        padding: 22px;
+    }
+
+    .dashboard {
+        padding: 25px 15px;
+    }
+}

@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav>
+        <a class="logo" href="/">My Website</a>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="/signin">Sign In</a>
+            <a class="button" href="/signup">Sign Up</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>Create your account and manage everything from your dashboard.</p>
+
+        <a class="button" href="/signup">Get Started</a>
+        <p>Already have an account? <a href="/signin">Sign In</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Majid Ali. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

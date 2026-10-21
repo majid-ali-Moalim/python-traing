@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Create Account</h1>
+        <p>Enter your information below.</p>
+
+        {% for message in get_flashed_messages() %}
+            <p class="message">{{ message }}</p>
+        {% endfor %}
+
+        <form method="POST" action="/signup">
+            <label>Full Name</label>
+            <input type="text" name="name" required autocomplete="name">
+
+            <label>Email Address</label>
+            <input type="email" name="email" required autocomplete="email">
+
+            <label>Password</label>
+            <input type="password" name="password" minlength="8"
+                   required autocomplete="new-password">
+
+            <label>Confirm Password</label>
+            <input type="password" name="confirm_password"
+                   minlength="8" required autocomplete="new-password">
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <p>Already registered? <a href="/signin">Sign In</a></p>
+        <a href="/">Back to Home</a>
+    </div>
+
+</body>
+</html>
